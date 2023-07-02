@@ -3,6 +3,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/ui/Button";
 import SignInButton from "@/components/SignInButton";
 import SignOutButton from "@/components/SignOutButton";
+import ThemeToggle from "./ThemeToggle";
 
 const NavBar = async () => {
     const session = await getServerSession();
@@ -14,11 +15,11 @@ const NavBar = async () => {
             </Link>
 
             <div className="md:hidden">
-                {/* <ThemeToggle /> */}
+                <ThemeToggle />
             </div>
 
             <div className="hidden: md:flex gap-4">
-                {/* <ThemeToggle /> */}
+                <ThemeToggle />
                 <Link href={'/documentation'} className={buttonVariants({ variant: 'ghost' })}>Documentation</Link>
                 {session ? (
                     <>
