@@ -3,10 +3,10 @@
         "clsx",
         "lucide"
     ],
-    "tailwindCSS.experimental.classRegex": [
-        [
-            "cva\\(([^)]*)\\)",
-            "[\"'`]([^\"'`]*).*?[\"'`]"
-        ]
-    ]
+    // "tailwindCSS.experimental.classRegex": [
+    //     [
+    //         "cva\\(([^)]*)\\)",
+    //         "[\"'`]([^\"'`]*).*?[\"'`]"
+    //     ]
+    // ]
 }

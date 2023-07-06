@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark .three-d {
+    text-shadow: 0px 5px 0px #533519;
+}
+
+.light .three-d {
+    text-shadow: 0px 5px 0px #d4d4d4;
+}
+
+.three-d {
+    text-shadow: none;
+}
+
+.dark .simplebar-track.simplebar-horizontal .simplebar-scrollbar::before {
+    background-color: #d4d4d4;
+}
+
+.dark .simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+    background-color: #d4d4d4;
+}
