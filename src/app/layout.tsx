@@ -1,7 +1,7 @@
 import NavBar from '@/components/NavBar'
 import Providers from '@/components/Providers'
 import { Toaster } from '@/components/ui/Toast'
-import { cn } from '@/lib/utils/utils'
+import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
 
