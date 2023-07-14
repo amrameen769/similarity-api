@@ -7,6 +7,7 @@ import LgHeading from './ui/LargeHeading'
 import Paragraph from './ui/Paragraph'
 import { Input } from './ui/Input'
 import Table from './Table'
+import ApiKeyOptions from './ApiKeyOptions'
 
 const ApiDashboard = async () => {
 
@@ -43,6 +44,7 @@ const ApiDashboard = async () => {
       <Paragraph>Your API Key:</Paragraph>
       <Input className='w-fit truncate' readOnly value={activeApiKey.key} />
       {/* Revoke and Create new */}
+      <ApiKeyOptions apiKeyId={activeApiKey.id} apiKeyValue={activeApiKey.key} />
     </div>
     <Paragraph className='text-center md:text-left mt-4 -mb-4'>Your API History</Paragraph>
     <Table userRequests={serializableRequests} />
